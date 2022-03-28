@@ -1,0 +1,14 @@
+<ng-container>
+    <h1 mat-dialog-title>{{namePerson}} movie list</h1>
+    <div mat-dialog-content>
+        <ul>
+            <li *ngFor="let film of movis">
+                <span>{{film.title}}</span>
+            </li>
+        </ul>
+    </div>
+    <div mat-dialog-actions align="end">
+        <button class="btn btn-secondary" [mat-dialog-close]="data.animal" cdkFocusInitial>Close</button>
+    </div>
+</ng-container>
+

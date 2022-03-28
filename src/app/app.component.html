@@ -1,0 +1,10 @@
+<ng-container >
+  <div class="wabi-test container">
+    <h1>People list of Start Wars</h1>
+    <div class="row g-3">
+      <div *ngFor="let person of peopleList" class="col-md-4 col-sm-2">
+        <app-people-list [person]="person"></app-people-list>
+      </div>
+    </div>
+  </div>
+</ng-container>

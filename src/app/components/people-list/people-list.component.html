@@ -1,0 +1,22 @@
+<mat-card class="people-card">
+    <mat-card-header>
+      <mat-card-title>{{person.name}}</mat-card-title>
+      <mat-card-subtitle>{{planet}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ul>
+            <li>Gender: {{person.gender}}</li>
+            <li>Height: {{person.height}}</li>
+            <li>Mass: {{person.mass}}</li>
+            <li>Hair color: {{person.hair_color}}</li>
+            <li>Skin color: {{person.skin_color}}</li>
+            <li>Birth year: {{person.birth_year}}</li>
+            <ng-container *ngFor="let specie of species">
+                <li>Specie: {{specie}}</li>
+            </ng-container>
+        </ul>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button class="btn btn-secondary" (click)="showFilms()">Films</button>
+    </mat-card-actions>
+  </mat-card>
